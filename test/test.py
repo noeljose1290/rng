@@ -15,7 +15,7 @@ async def test_chaos_generator(dut):
     # Reset
     # ---------------------------
     dut.ena.value = 1
-    dut.ui_in.value = 0      # r parameter
+    dut.ui_in.value = 240      # r parameter
     dut.uio_in.value = 0x80  # seed (~0.5)
     dut.rst_n.value = 0
 
