@@ -16,7 +16,7 @@ async def test_chaos_generator(dut):
     # ---------------------------
     dut.ena.value = 1
     dut.ui_in.value = 240      # r parameter
-    dut.uio_in.value = 0x80  # seed (~0.5)
+    dut.uio_in.value = 0x73  # seed (~0.5)
     dut.rst_n.value = 0
 
     await ClockCycles(dut.clk, 10)
